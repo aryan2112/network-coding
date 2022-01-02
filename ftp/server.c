@@ -31,7 +31,7 @@ int main()
 
 	printf("Server has started working ...");
 	int clientDescriptor = accept(socketDescriptor,(struct sockaddr*)&clientAddress,&clientLength);
-
+//comment
 	while(1){
 	bzero(buffer,sizeof(buffer));
 	bzero(file,sizeof(file));

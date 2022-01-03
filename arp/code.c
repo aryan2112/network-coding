@@ -32,4 +32,4 @@ int main(int argc,char *argv[])
 	printf("MAC Address For '%s' : ",argv[1]);
 	printf("%X:%X:%X:%X:%X:%X\n",ptr,(ptr+1),(ptr+2),(ptr+3),(ptr+4),(ptr+5));
 	return 0;
-}
+}//

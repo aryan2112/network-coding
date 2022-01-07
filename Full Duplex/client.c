@@ -7,7 +7,7 @@
 #include <unistd.h>
 #include "netdb.h"
 #include "arpa/inet.h"
-
+// full duplex
 int main()
 {
 int socketDescriptor;

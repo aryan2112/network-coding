@@ -9,7 +9,7 @@
 #include "arpa/inet.h"
 #define MAX 1000
 #define BACKLOG 5
-//half duplex
+
 int main()
 {
     char serverMessage[MAX];

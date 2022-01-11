@@ -8,7 +8,7 @@
 #include<netinet/in.h>
 #include<arpa/inet.h>
 #include<string.h>
-//arp
+
 int main(int argc,char *argv[])
 {
 	struct sockaddr_in sin={0};

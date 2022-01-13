@@ -6,12 +6,10 @@
 #include<unistd.h>
 #include<time.h>
 
-//port value and the max size for buffer
-#define PORT 9002 //the port users will be connecting to
-#define BACKLOG 10 //how many pending connections queue will hold
+#define PORT 9002
+#define BACKLOG 10
 
 int main(){
-  //*******************Time Setup***********************
   time_t currentTime ;
   time(&currentTime);
   //****************************************************

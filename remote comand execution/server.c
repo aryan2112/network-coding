@@ -9,6 +9,7 @@
 #include <arpa/inet.h>
 #include <unistd.h>
 #define MAX 1000
+//remote
 int main()
 {
 	int serverDescriptor = socket(AF_INET, SOCK_DGRAM, 0);

@@ -6,7 +6,7 @@
 #include "string.h"
 
 #define PORT 9002
-#define MAXLINE 30 //for buffer size
+#define MAXLINE 30
 
 int main(){
 

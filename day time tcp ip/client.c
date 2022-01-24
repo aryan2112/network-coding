@@ -5,7 +5,7 @@
 #include <netinet/in.h>
 #include "string.h"
 
-#define PORT 9002 //the port users will be connecting to
+#define PORT 9002
 #define MAXLINE 30 //for buffer size
 
 int main(){

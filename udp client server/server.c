@@ -12,14 +12,11 @@ int main(){
   int number;
   socklen_t addressLength;
   char message[MAXLINE];
-
   struct sockaddr_in  serverAddress,clientAddress;
   serverAddress.sin_family = AF_INET;
   serverAddress.sin_addr.s_addr=INADDR_ANY;
   serverAddress.sin_port=htons(PORT);
-
   bind(socketDescriptor,(struct sockaddr*)&serverAddress,sizeof(serverAddress));
-
   printf("\nServer Started ...\n");
 
   while(1){

@@ -18,15 +18,11 @@ int main(){
   serverAddress.sin_port=htons(PORT);
   bind(socketDescriptor,(struct sockaddr*)&serverAddress,sizeof(serverAddress));
   printf("\nServer Started ...\n");
-
   while(1){
     printf("\n");
     addressLength = sizeof(clientAddress);
-
     number = recvfrom(socketDescriptor,message,MAXLINE,0,(struct sockaddr*)&clientAddress,&addressLength);
-
     printf("\n Client's Message: %s ",message);
-
     if(number<6)
       perror("send error");
 

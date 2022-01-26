@@ -25,7 +25,6 @@ int main(){
     printf("\n Client's Message: %s ",message);
     if(number<6)
       perror("send error");
-
       sendto(socketDescriptor,message,number,0,(struct sockaddr*)&clientAddress,addressLength);
   }
   return 0;

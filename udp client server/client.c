@@ -10,8 +10,10 @@
 int main(){
   int serverDescriptor = socket(AF_INET, SOCK_DGRAM, 0); 
   socklen_t addressLength;
+  
   char sendMessage[MAXLINE],recvMessage[MAXLINE];
   printf("\nEnter message :");
+  
   fgets(sendMessage,sizeof(sendMessage),stdin);
   struct sockaddr_in serverAddress;
   serverAddress.sin_family = AF_INET;

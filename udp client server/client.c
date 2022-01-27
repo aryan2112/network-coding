@@ -21,7 +21,6 @@ int main(){
   serverAddress.sin_port = htons(PORT);
   addressLength = sizeof(serverAddress);
   connect(serverDescriptor,(struct sockaddr*)&serverAddress,addressLength);
-  
   sendto(serverDescriptor,sendMessage,MAXLINE,0,(struct sockaddr*)&serverAddress,addressLength);
   recvfrom(serverDescriptor,recvMessage,MAXLINE,0,NULL,NULL);
  

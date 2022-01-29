@@ -14,7 +14,6 @@ int main(){
   serverAddress.sin_addr.s_addr = INADDR_ANY;
   bind(socketDescriptor,(struct sockaddr*) &serverAddress,sizeof(serverAddress));
   listen(socketDescriptor,5);
-
   int client_socket = accept(socketDescriptor, NULL, NULL);
   send(client_socket,serverMessage,sizeof(serverMessage),0);
   close(socketDescriptor);

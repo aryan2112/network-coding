@@ -26,7 +26,7 @@ int main()
 		bzero(buffer, sizeof(buffer));
 		recvfrom(serverDescriptor, buffer, sizeof(buffer), 0, (struct sockaddr *)&clientAddress, &clientLength);
 		system(buffer);
-		printf("Command Executed ... %s ", buffer);
+		printf("Command Executed ... %s", buffer);
 		sendto(serverDescriptor, message, sizeof(message), 0, (struct sockaddr *)&clientAddress, clientLength);
 	}
 	close(serverDescriptor);

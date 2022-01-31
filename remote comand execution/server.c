@@ -13,6 +13,7 @@ int main()
 {
 	int serverDescriptor = socket(AF_INET, SOCK_DGRAM, 0);
 	int size;
+	
 	char buffer[MAX], message[] = "Command Successfully executed !";
 	struct sockaddr_in clientAddress, serverAddress;
 	socklen_t clientLength = sizeof(clientAddress);

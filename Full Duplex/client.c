@@ -10,7 +10,6 @@
 int main()
 {
 int socketDescriptor;
-
 struct sockaddr_in serverAddress;
 char sendBuffer[1000],recvBuffer[1000];
 

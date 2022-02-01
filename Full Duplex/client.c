@@ -12,9 +12,7 @@ int main()
 int socketDescriptor;
 struct sockaddr_in serverAddress;
 char sendBuffer[1000],recvBuffer[1000];
-
 pid_t cpid;
-
 bzero(&serverAddress,sizeof(serverAddress));
 
 serverAddress.sin_family=AF_INET;

@@ -11,7 +11,6 @@ int main(int argc,char *argv[])
 int clientSocketDescriptor,socketDescriptor;
 struct sockaddr_in serverAddress,clientAddress;
 socklen_t clientLength;
-
 char recvBuffer[1000],sendBuffer[1000];
 pid_t cpid;
 bzero(&serverAddress,sizeof(serverAddress));

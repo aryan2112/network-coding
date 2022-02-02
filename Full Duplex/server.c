@@ -6,7 +6,6 @@
 #include<arpa/inet.h>
 #include<netinet/in.h>
 #include<string.h>
-
 int main(int argc,char *argv[])
 {
 int clientSocketDescriptor,socketDescriptor;

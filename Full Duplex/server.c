@@ -9,7 +9,6 @@
 int main(int argc,char *argv[])
 {
 int clientSocketDescriptor,socketDescriptor;
-
 struct sockaddr_in serverAddress,clientAddress;
 socklen_t clientLength;
 

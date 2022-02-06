@@ -7,8 +7,7 @@
 #define PORT 9002
 #define MAXLINE 30
 int main(){
-  int socket_descriptor = socket(AF_INET, SOCK_STREAM, 0);
-  
+  int socket_descriptor = socket(AF_INET, SOCK_STREAM, 0);  
   char serverResponse[MAXLINE];
 
   struct sockaddr_in serverAddress;

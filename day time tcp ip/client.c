@@ -9,8 +9,7 @@
 int main(){
   int socket_descriptor = socket(AF_INET, SOCK_STREAM, 0);  
   char serverResponse[MAXLINE];
-  struct sockaddr_in serverAddress;
-  
+  struct sockaddr_in serverAddress;  
   serverAddress.sin_family = AF_INET;
   serverAddress.sin_addr.s_addr = INADDR_ANY;
   serverAddress.sin_port = htons(PORT);

@@ -9,7 +9,6 @@
 int main(){
   int socket_descriptor = socket(AF_INET, SOCK_STREAM, 0);  
   char serverResponse[MAXLINE];
-
   struct sockaddr_in serverAddress;
   
   serverAddress.sin_family = AF_INET;

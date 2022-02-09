@@ -14,9 +14,7 @@ int main(){
   serverAddress.sin_addr.s_addr = INADDR_ANY;
   serverAddress.sin_port = htons(PORT);
 connect(socket_descriptor, (struct sockaddr *)&serverAddress, sizeof(serverAddress));
-  
 recv(socket_descriptor,serverResponse,MAXLINE-1,0);
-
   printf("\nTIME FROM SERVER %s\n",serverResponse);
 
   return 0;

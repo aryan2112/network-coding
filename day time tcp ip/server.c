@@ -5,10 +5,8 @@
 #include<netinet/in.h>
 #include<unistd.h>
 #include<time.h>
-
 #define PORT 9002
 #define BACKLOG 10
-
 int main(){
   time_t currentTime ;
   time(&currentTime);

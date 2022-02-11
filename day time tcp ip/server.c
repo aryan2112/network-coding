@@ -16,11 +16,9 @@ int main(){
   serverAddress.sin_family = AF_INET;
   serverAddress.sin_addr.s_addr=INADDR_ANY;
   serverAddress.sin_port=htons(PORT);
-bind(socket_descriptor,(struct sockaddr*)&serverAddress,sizeof(serverAddress));
+  bind(socket_descriptor,(struct sockaddr*)&serverAddress,sizeof(serverAddress));
   listen(socket_descriptor,BACKLOG);
-
   printf("\nServer Started ...");
-
 while(1){
   countClient++;
   printf("\n");

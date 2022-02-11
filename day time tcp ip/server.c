@@ -19,7 +19,7 @@ int main(){
   bind(socket_descriptor,(struct sockaddr*)&serverAddress,sizeof(serverAddress));
   listen(socket_descriptor,BACKLOG);
   printf("\nServer Started ...");
-while(1){
+  while(1){
   countClient++;
   printf("\n");
   int client_socket = accept(socket_descriptor, NULL, NULL);

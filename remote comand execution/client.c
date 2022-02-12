@@ -26,6 +26,7 @@ int main()
 	fgets(buffer, sizeof(buffer), stdin);
 	sendto(serverDescriptor, buffer, sizeof(buffer), 0, (struct sockaddr *)&serverAddress, serverLength);
 	printf("\nData Sent !");
+	
 	recvfrom(serverDescriptor, message, sizeof(message), 0, (struct sockaddr *)&serverAddress, &serverLength);
 	printf("UDP SERVER : %s", message);
 	}

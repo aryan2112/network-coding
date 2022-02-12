@@ -12,12 +12,14 @@ int main()
 	int serverDescriptor = socket(AF_INET, SOCK_DGRAM, 0);
 	char buffer[MAX], message[MAX];
 	struct sockaddr_in cliaddr, serverAddress;
+	
 	socklen_t serverLength = sizeof(serverAddress);
 	bzero(&serverAddress, sizeof(serverAddress));
 	serverAddress.sin_family = AF_INET;
 	serverAddress.sin_addr.s_addr = inet_addr("127.0.0.1");
 	serverAddress.sin_port = htons(8596);
 	bind(serverDescriptor, (struct sockaddr *)&serverAddress, sizeof(serverAddress));
+	
 	while (1)
        	{
 	printf("\nCOMMAND FOR EXECUTION ... ");

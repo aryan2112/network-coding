@@ -16,7 +16,6 @@ int main()
 	char buffer[MAX], message[] = "Command Successfully executed !";
 	struct sockaddr_in clientAddress, serverAddress;
 	socklen_t clientLength = sizeof(clientAddress);
-	
 	bzero(&serverAddress, sizeof(serverAddress));
 	serverAddress.sin_family = AF_INET;
 	serverAddress.sin_addr.s_addr = htonl(INADDR_ANY);

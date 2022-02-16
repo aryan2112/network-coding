@@ -17,8 +17,7 @@ int main()
 	struct sockaddr_in serverAddress, clientAddress;
 	socklen_t clientLength;        
 	struct stat statVariable;		    
-	char buffer[100], file[1000];
-			         
+	char buffer[100], file[1000];		         
 	FILE *filePointer;
 	bzero(&serverAddress, sizeof(serverAddress));
 				         

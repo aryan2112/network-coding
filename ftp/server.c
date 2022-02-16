@@ -19,8 +19,7 @@ int main()
 	struct stat statVariable;		    
 	char buffer[100], file[1000];		         
 	FILE *filePointer;
-	bzero(&serverAddress, sizeof(serverAddress));
-				         
+	bzero(&serverAddress, sizeof(serverAddress));			         
 	serverAddress.sin_family = AF_INET;
 	serverAddress.sin_addr.s_addr = htonl(INADDR_ANY);
 	serverAddress.sin_port = htons(PORT);

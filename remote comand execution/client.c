@@ -12,7 +12,6 @@ int main()
 	int serverDescriptor = socket(AF_INET, SOCK_DGRAM, 0);
 	char buffer[MAX], message[MAX];
 	struct sockaddr_in cliaddr, serverAddress;
-	
 	socklen_t serverLength = sizeof(serverAddress);
 	bzero(&serverAddress, sizeof(serverAddress));
 	serverAddress.sin_family = AF_INET;

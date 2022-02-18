@@ -8,7 +8,6 @@
 int main(){
   char serverMessage[256] = "You have a missed call from server\n";
   int socketDescriptor = socket(AF_INET,SOCK_STREAM,0);
-
   struct sockaddr_in serverAddress;
   serverAddress.sin_family = AF_INET;
   serverAddress.sin_port = htons(9002);

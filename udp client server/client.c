@@ -6,7 +6,6 @@
 #include <netinet/in.h>
 #define MAXLINE 1024
 #define PORT 5035
-
 int main(){
   int serverDescriptor = socket(AF_INET, SOCK_DGRAM, 0); 
   socklen_t addressLength;

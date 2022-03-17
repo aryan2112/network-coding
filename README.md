@@ -1,2 +1,2 @@
 # network-coding
-basic computer network codes
+basic computer network code

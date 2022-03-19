@@ -17,7 +17,7 @@ void get()
 	cout<<"\nLEADING AND TRAILING\n";
 	cout<<"\nEnter the no. of variables : ";
 	cin>>vars;
-	cout<<"\nEnter the variables : \n";
+	cout<<"\nEnter the variables: \n";
 	for(i=0;i<vars;i++)
 	{
 		cin>>gram[i].lhs;

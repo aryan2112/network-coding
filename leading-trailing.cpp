@@ -6,7 +6,7 @@
 using namespace std;
 
 int vars,terms,i,j,k,m,rep,count,temp=-1;
-char var[10],term[10],lead[10][10],trail[10][];
+char var[10],term[10],lead[10][10],trail[10][10];
 struct grammar
 {	
 	int prodno;
